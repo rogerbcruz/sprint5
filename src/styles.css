@@ -1,1 +1,37 @@
-/* You can add global styles to this file, and also import other style files */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-principal {
+  grid-template-areas:
+    "left rigth"
+}
+
+.left {
+  grid-area: left;
+}
+
+.rigth {
+  grid-area: rigth;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.grid {
+  width: auto;
+  height: auto;
+}
+
+html,
+body {
+  height: 635px;
+  width: 1349px;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
